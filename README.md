@@ -1,2 +1,2 @@
 # CV
-My own CV
+My own CV page written in html and css
