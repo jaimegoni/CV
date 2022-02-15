@@ -4,24 +4,375 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jaime Goñi Carnicero's personal CV's webpage">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/Reset.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="styles/GeneralStyles.css">
+
+    <!-- Images -->
+
+    <link rel="icon" href="images/icono.PNG">
+    
+    
     <title>Jaime's CV</title>
 </head>
 <body>
-    <table>
-        <td>
-            <div>
-                <img src="images/1517351027933.jpg" alt="profilePicture">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar__nav">
+        <div class="container navbar__container">
+            <a class="navbar__link" href="#header">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbar__container" id="navbarTogglerDemo01">
+            
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="height: 100%;">
+                <li class="nav-item navbar__link">
+                <a class="navbar__link" aria-current="page" href="#experience" style="color: white;">Experiencia</a>
+                </li>                  
+                <li class="nav-item navbar__link">
+                <a class="navbar__link" aria-current="page" href="#courses" style="color: white;">Cursos</a>
+                </li>
+                <li class="nav-item navbar__link">
+                <a class="navbar__link" aria-current="page" href="#skills" style="color: white;">Habilidades</a>
+                </li>
+                <li class="nav-item navbar__link">
+                <a class="navbar__link" aria-current="page" href="#contact" style="color: white;">Contacto</a>
+                </li>
+            </ul>
             </div>
-            <div>
-                <a href="https://www.linkedin.com/in/jaime-go%C3%B1i-carnicero-643492106/" target="blank">Jaime Goñi Carnicero</a>
-            </div>
-            <div><p><strong>Ingeniero Industrial | Organización</strong></p></div>
-            <div><p>Email: jaimegonicarnicero@hotmail.com</p></div>
-        </td>
-        <td>
-            <div><h1>Bienvenido a mi página personal</h1></div>
-        </td>
+        </div>
+    </nav>
 
-    </table>
+    <section id="header" class="section_margin section__margin--intermediate">
+
+        <!-- <nav class="navbar navbar-expand-lg navbar-light navbar__structure">
+            <a class="navbar-brand" href="header">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="experience">Experiencia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="courses">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="skills">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </nav> -->
+        
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col col-lg-4 col-md-4 col-sm-12 col-12 container__images--center">
+                    <img class="image--rounded" src="images/1517351027933.jpg" alt="Profile Picture"/>
+                </div>
+                <div class="col col-lg-8 col-md-8 col-sm-12 col-12 header__text--container">
+                    <h1 class="header__text--title">
+                        Jaime Goñi Carnicero
+                    </h1>
+                    <h2 class="header__text--subtitle">
+                        Ingeniero Industrial | Organización
+                    </h2>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="experience" class="section__margin section__margin--intermediate">
+        
+        <div class="section__container">
+            <h1 class="section__container--title">
+                Experiencia laboral
+            </h1>
+            <hr>
+        </div>
+
+        <div class="container">
+
+            <div class="row" id="ExperienceVicarli">
+                <div class="col col-lg-3 col-md-3 col-sm-12 col-12 experience__logo--div">
+                    <a href="https://www.vicarli.com/" target="blank">
+                        <img class="experience__logos" src="https://www.vicarli.com/img/vicarli_logo.png" alt="logoVicarli">
+                    </a>
+                </div>
+                <div class="col col-lg-9 col-md-9 col-sm-12 col-12">
+                    <div class="experience__text--header">
+                        <h3>Técnico de sistemas en <em><a class="experience__company--link" href="https://www.vicarli.com/index.html" target="blank">Vicarli S.L.U.</em></a></h3>
+                        <h6>Desde marzo de 2021 y en la actualidad</h6>
+                        <a class="btn btn-outline-light btn-sm" data-bs-toggle="collapse" href="#collapseVicarli" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Ver / ocultar experiencia
+                        </a>
+                    </div>
+
+                    <div class="collapse experience__text--comments" id="collapseVicarli">
+                        <p>Actualmente realizo las siguientes tareas:</p>
+                        <ul class="experience__ul--primary">
+                            <li>Seguimiento de proyectos informáticos</li>
+                            <li>Definición de requerimientos y diseño de nuevos desarrollos informáticos</li>
+                            <li>Algunas cosas de Python y análisis de datos ya me toca hacer</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            
+            <br>
+
+            <div class="row" id="ExperienceExkal">
+                <div class="col col-lg-3 col-md-3 col-sm-12 col-12 experience__logo--div">
+                    <a href="https://exkalsa.com/" target="blank">
+                        <img class="experience__logos" src="https://media-exp1.licdn.com/dms/image/C4E0BAQEP8GJL4SKyeg/company-logo_200_200/0/1588919898999?e=1652918400&v=beta&t=s0pH_t3fKhFWF0X2Rauv4_E190UvZ55nuorBkNlk4CU" alt="logoExkal">
+                    </a>
+                </div>
+                <div class="col col-lg-9 col-md-9 col-sm-12 col-12">
+                    <div class="experience__text--header">
+                        <h3>Ingeniero de producto-laboratorio en <em><a class="experience__company--link" href="https://exkalsa.com/" target="blank">Exkal S.A.</em></a></h3>
+                        <h6>Desde febrero de 2020 hasta febrero de 2021</h6>
+                        <a class="btn btn-outline-light btn-sm" data-bs-toggle="collapse" href="#collapseExkal" role="button" aria-expanded="false" aria-controls="collapseExkal">
+                            Ver / ocultar experiencia
+                        </a>
+                    </div>
+
+                    <div class="collapse experience__text--comments" id="collapseExkal">
+                        <p>Durante mi experiencia en Exkal, realicé las siguientes tareas:</p>
+                        <ul class="experience__ul--primary">
+                            <li>Ensayos de laboratorio de máquinas frigoríficas.</li>
+                            <li>Realización de informes de los ensayos según norma.</li>
+                            <li>Diseño de un automatismo basado en Arduino y Python:</li>
+                            <ul class="experience__ul--secondary">
+                                <li>Modelo de protocolo maestro - esclavo.</li>
+                                <li>Control de actuadores y señales con Arduino como esclavo.</li>
+                                <li>Maestro, control del proceso y flujo y registro de resultados con Python.</li>
+                                <li>Intefaz gráfica mediante la librería Tkinter.</li>
+                            </ul>
+                            <li>Cablear máquinas y cuadros eléctricos. Montar máquinas frigoríficas (lo cual me gustaba mucho, la verdad).</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row" id="ExperienceUpna">
+                <div class="col col-lg-3 col-md-3 col-sm-12 col-12 experience__logo--div">
+                    <a href="https://www.unavarra.es/home" target="blank">
+                        <img class="experience__logos" src="https://www.unavarra.es/si/assets/img/core/upna-logo.svg" alt="logoUpna">
+                    </a>
+                </div>
+                <div class="col col-lg-9 col-md-9 col-sm-12 col-12">
+                    <div class="experience__text--header">
+                        <h3>Ayudante de proyecto en la  <em><a class="experience__company--link" href="https://www.unavarra.es/home" target="blank">UPNA</em></a></h3>
+                        <h6>Varios meses entre octubre de 2017 y enero de 2020</h6>
+                        <a class="btn btn-outline-light btn-sm" data-bs-toggle="collapse" href="#collapseUpna" role="button" aria-expanded="false" aria-controls="collapseUpna">
+                            Ver / ocultar experiencia
+                        </a>
+                    </div>
+
+                    <div class="collapse experience__text--comments" id="collapseUpna">
+                        <p>Estuve con contrato unos 9 meses en total en la UPNA. Sin embargo, y dado que como estudiante podía ayudar en los laboratorios, hice alguna colaboración más prolongada.</p>
+                        <p>En la universidad, como investigador, llevé a cabo las siguientes tareas:</p>
+                        <ul class="experience__ul--primary">
+                            <li>Simulaciones de ondas acústicas.</li>
+                            <li>Ensayos de sensores para medir mercurio en agua.</li>
+                            <li>Otros ensayos de sensores.</li>
+                            <li>También realicé el Trabajo Fin de Grado en el laboratorio de sensores, con el cual obtuve mi primera y última matricula de honor 🤣</li>
+                            <li>De mi paso por la UPNA quedan los siguientes documentos:</li>
+                            <ul class="experience__ul--secondary">
+                                <li>Un robot para automatizar el tratamiento de la fibra óptica. Trabajamos varios compañeros en él.
+                                    Yo me encargué de parte del diseño electrónico y de la programación en Arduino.
+                                    ➡<a href="https://wwwa.fundacio.urv.cat/congressos/public/docs/vicente-et-al-ibernam2018.pdf" target="blank" style="color: white;">Aquí hay un enlace para verlo</a>⬅
+                                </li>
+                                <li>Tres publicaciones, aquí dejo los enlaces:</li>
+                                <ul class="experience__ul--tertiary">
+                                    <li>
+                                        <a href="https://www.osapublishing.org/abstract.cfm?uri=jlt-37-18-4665" target="blank" style="color: white;">
+                                            Etched and nanocoated single-mode multimode single-mode (SMS) fibers for detection of wind turbine gearbox oil degradation
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://ieeexplore.ieee.org/abstract/document/8234368/" target="blank" style="color: white;">
+                                            Sensitivity enhancement by diameter reduction in low cutoff wavelength single-mode multimode singlemode (SMS) fiber sensors
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.osapublishing.org/abstract.cfm?uri=ofs-2018-WF34" target="blank"  style="color: white;">
+                                            Detection of wind turbine gearbox oil degradation with etched single-mode multimode single-mode (SMS) fiber
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </ul>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="courses" class="section__margin section__margin--intermediate">
+        <div class="section__container">
+            <h1 class="section__container--title">
+                Cursos e información de interés
+            </h1>
+            <hr>
+        </div>
+
+        <div>
+            <ul class="experience__ul--primary">
+                <li>Actualmente realizo un curso de programación web online en &nbsp;
+                    <a href="https://www.udemy.com/" target="blank"><img class="logo__small" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="logo-udemy"></a>
+                </li>
+                <li>Curso de desarrollo de software basado en agile y UX en &nbsp;
+                    <a href="https://www.biko2.com/curso-desarrollo-software/" target="blank"><img class="logo__small" src="https://www.biko2.com/assets/images/logo-biko.svg" alt="logo-biko"></a>
+                    ➡ ¡ Súper recomendable !
+                </li>
+                <li>Estuve 7 meses de Erasmus en la Universidad Técnica de Braunschweig, Alemania.</li>
+                <li>Trabajé como camarero en verano de 2017 en Inverkeithing, Escocia.</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <section id="skills" class="section__margin section__margin--intermediate">
+        <div class="section__container">
+            <h1 class="section__container--title">
+                Habilidades
+            </h1>
+            <hr>
+        </div>
+
+        <div class="container">
+            <p>Algunos conocimientos aparte</p>
+            <div class="row">
+                <div class="col col-lg-3 col-md-3 col-sm-6 col-6">
+                    ⭐⭐⭐⭐
+                </div>
+                <div class="col col-lg-3 col-md-3 col-sm-6 col-6">
+                    Inglés (título B2)
+                </div>
+                
+                <div class="col col-lg-3 col-md-3 col-sm-6 col-6">
+                    ⭐⭐⭐⭐
+                </div>
+                <div class="col col-lg-3 col-md-3 col-sm-6 col-6">
+                    Python
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-lg-3 col-md-3 col-sm-6 col-6">
+                    ⭐⭐⭐
+                </div>
+                <div class="col col-lg-3 col-md-3 col-sm-6 col-6">
+                    Alemán (título B1)
+                </div>
+                <div class="col col-lg-3 col-md-3 col-sm-6 col-6">
+                    ⭐⭐⭐
+                </div>
+                <div class="col col-lg-3 col-md-3 col-sm-6 col-6">
+                    Matlab
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-lg-3 col-md-3 col-sm-6 col-6">
+                    ⭐⭐⭐
+                </div>
+                <div class="col col-lg-3 col-md-3 col-sm-6 col-6">
+                    Microsoft Office
+                </div>
+                <div class="col col-lg-3 col-md-3 col-sm-6 col-6">
+                    ⭐⭐⭐
+                </div>
+                <div class="col col-lg-3 col-md-3 col-sm-6 col-6">
+                    Arduino
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-lg-3 col-md-3 col-sm-6 col-6">
+                    ⭐⭐
+                </div>
+                <div class="col col-lg-3 col-md-3 col-sm-6 col-6">
+                    Solidworks
+                </div>
+                <div class="col col-lg-3 col-md-3 col-sm-6 col-6">
+                    ⭐
+                </div>
+                <div class="col col-lg-3 col-md-3 col-sm-6 col-6">
+                    html y css
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-lg-3 col-md-3 col-sm-6 col-6">
+                    ⭐
+                </div>
+                <div class="col col-lg-3 col-md-3 col-sm-6 col-6">
+                    Autocad
+                </div>
+                <div class="col col-lg-3 col-md-3 col-sm-6 col-6">
+                    😭
+                </div>
+                <div class="col col-lg-3 col-md-3 col-sm-6 col-6">
+                    Javascript y React
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="contact" class="section__margin section__margin--intermediate">
+        <div class="section__container">
+            <h1 class="section__container--title">
+                Contacto
+            </h1>
+            <hr>
+        </div>
+        
+        <div class="container">
+
+            <div class="row" style="text-align: center;">
+                <div class="col col-lg-6 col-md-6 col-sm-12 col-12" style="padding-bottom: 2em;">
+                    <h5>¡ Envíame un email a jaimegonicarnicero@hotmail.com !</h5>
+                    <form action="mailto:jaimegonicarnicero@hotmail.com" method="post" enctype="text/plain">
+                        <div>
+                            <input type="submit" title="submit" class="btn btn-outline-light">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col col-lg-6 col-md-6 col-sm-12 col-12">
+                    <h5>¡ Contacta conmigo en LinkedIn !</h5>
+                    <a href="https://www.linkedin.com/in/jaime-go%C3%B1i-carnicero-643492106/" target="blank"><img class="logo__small" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="icono-linkedin"></a>
+                </div>
+
+            </div>
+            
+
+        </div>
+    </section>
+
 </body>
 </html>

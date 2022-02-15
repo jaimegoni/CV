@@ -1,0 +1,234 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=IBM+Plex+Sans+Thai+Looped:wght@300&family=Montserrat&display=swap');
+
+/* General Styles */
+
+/*Colors: #1C658C, #398AB9, #D8D2CB, #EEEEEE*/
+/*https://colorhunt.co/palette/1c658c398ab9d8d2cbeeeeee*/
+
+body{
+    background-image: linear-gradient(to bottom right, #1C658C, #D8D2CB);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 100%;
+    
+}
+
+/* Sections */
+
+.section__margin{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.container__images--center{
+    text-align: center;
+
+}
+
+#contact{
+    margin-bottom: 5%;
+}
+
+.section__margin--intermediate{
+    padding-top: 4em;
+
+}
+
+/* Header styles */
+.navbar__nav{
+    background-color: #1C658C;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color: white;
+    
+    position: sticky;
+    top: 0px;
+
+    scroll-padding-top: 100px;
+
+    width: 100%;
+    height: 100%;
+
+    padding-top: 0.75em;
+    padding-bottom: 1em;
+}
+
+:target:before {
+    content: "";
+    display: block;
+    height: 100px;
+    margin-top: -4em;
+}
+
+.navbar__container{
+    height: 100%;
+    align-items: center;
+}
+
+.navbar__link{
+    height:100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding-top: 1em;
+    padding-left: 10%;
+}
+
+.navbar__link:hover{
+    color: white;
+    font-weight: bolder;
+}
+
+.image--rounded{
+    width: 50%;
+    border-radius: 50%;
+}
+
+.header__text--container{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    text-align: left;
+}
+
+.header__text--title{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 3rem;
+}
+
+.header__text--subtitle{
+    font-size: 1rem;
+}
+
+/* Experience section */
+
+.section__container{
+    margin-top: 2em;
+}
+
+.section__container--title{
+    font-family: 'Fira Sans', sans-serif;
+    color: #D8D2CB;
+    font-size: 2rem;
+
+}
+
+.experience__logos{
+    width: 75%;
+    border-radius: 5px;
+
+}
+
+.experience__logo--div{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.experience__company--link{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.experience__text--header{
+    margin-top: 1em;
+}
+
+.experience__text--comments{
+    margin-top: 1em;
+    font-size: medium;
+}
+
+.experience__ul--primary{
+    list-style-type: disc;
+}
+
+.experience__ul--secondary{
+    list-style-type: circle;
+}
+
+.experience__ul--tertiary{
+    list-style-type: square;
+}
+
+/* Courses section*/
+
+.logo__small{
+    max-width: 4em;
+}
+
+/* Media queries */
+
+@media (max-width: 991px){
+    .navbar__link{
+        height:auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    
+        color: white;
+    
+        text-decoration: none;
+    
+        padding-top: auto;
+        padding-left: auto;
+    }
+    .navbar__link{
+        padding-left: 0%;
+        max-width: 50%;
+    }
+
+    .navbar__link:hover{
+        font-weight: bolder;
+    }
+}
+
+@media (max-width: 895px){
+    .section__margin{
+    
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    
+}
+
+@media (max-width: 768px){
+    .header__text--container{
+        text-align: center;
+    }
+    
+    .section__container{
+        text-align: center;
+    }
+    .experience__logos{
+        width: 30%;
+    }
+    
+    .experience__logo--div{
+        text-align: center;
+    }
+    .experience__text--header{
+        text-align: center;
+    }
+}
+@media (max-width: 509px){
+    .header__text--title{
+        font-size: 2rem;
+    }
+}
+
